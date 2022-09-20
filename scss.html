@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scss</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+ <header class="header">
+    <nav class="nav">
+        <p class="logo">workingfish</p>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="./html-page.html">html</a></li> 
+            <li class="nav-item"><a href="">css</a></li>
+            <li class="nav-item"><a href="./scss.html">scss</a></li>
+            <li class="nav-item"><a href="./git.html">git</a></li>
+            <li class="nav-item"><a href="./github.html">github</a></li>
+            <li class="nav-item"><a href="">figma</a></li>
+            <li class="nav-item"><a href="">js</a></li>
+            <li class="nav-item"><a href="./tasks.html">tasks</a></li>
+        </ul>
+    </nav>
+    <h1><span class="h1">scss</span> &mdash; метаязык на основе CSS, предназначенный для упрощения файлов каскадных таблиц стилей</h1>
+</header> 
+<main class="main">
+    <section class="intro">
+        <p class="intro-text">Язык Sass имеет два синтаксиса:</p>
+        <p class="intro-text">SASS — отличается отсутствием фигурных скобок, <br> в нём вложенные элементы реализованы с помощью отступов;</p>
+        <p class="intro-text">SCSS (Sassy CSS) — использует фигурные скобки, как и сам CSS.</p>
+    </section>
+    <section class="scss-info">
+        <h2 class="title">Переменные</h2>
+        <p class="info-text">Переменные обозначаются знаком $.</p>
+        <p class="info-text">Пример:</p>
+        <img class="example" src="./img/scss/scss1.png" alt="scss example">
+        <h2 class="title">Вложенные правила</h2>
+        <p class="info-text">Пример:</p>
+        <img class="example" src="./img/scss/scss2.png" alt="scss example">
+        <h2 class="title">Амперсанд</h2>
+        <p class="info-text">С его помощью мы указываем где должен быть вставлен родительский селектор</p>
+        <p class="info-text">Пример:</p>
+        <img class="example" src="./img/scss/scss3.png" alt="scss example">
+        <h2 class="title">Миксины (примеси)</h2>
+        <p class="info-text">Чтобы создать миксин, необходимо указать ключевое слово @mixin и дать ему уникальное имя.
+            Внутри этого миксина просто записываются все необходимые правила.</p>
+        <p class="info-text">Для включения миксина в селектор используется ключевое слово @include после чего указывается имя миксина, который мы хотим подключить.</p>
+        <p class="info-text">Пример:</p>
+        <img class="example" src="./img/scss/scss4.png" alt="scss example">
+
+    </section>
+</main>
+</body>
