@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scss</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+ <header class="header">
+    <nav class="nav">
+        <p class="logo">workingfish</p>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="./html-page.html">html</a></li> 
+            <li class="nav-item"><a href="./css.html">css</a></li>
+            <li class="nav-item"><a href="./scss.html">scss</a></li>
+            <li class="nav-item"><a href="./git.html">git</a></li>
+            <li class="nav-item"><a href="./github.html">github</a></li>
+            <li class="nav-item"><a href="">figma</a></li>
+            <li class="nav-item"><a href="">js</a></li>
+            <li class="nav-item"><a href="./tasks.html">tasks</a></li>
+        </ul>
+    </nav>
+    <h1><span class="h1">git</span> &mdash; распределённая система управления версиями</h1>
+</header>
+<main class="main">
+    <section class="intro">
+        <p class="intro-text">
+            <a href="https://habr.com/ru/post/541258/" target="_blank">Статья “Что такое git и зачем он нужен”</a>
+        </p>
+        <p class="intro-text">
+            <a href="https://git-scm.com/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9" target="_blank">Основы Git. Учебник</a>
+        </p>
+        <p class="intro-text">
+            <a href="https://learngitbranching.js.org/?locale=ru_RU" target="_blank">Интерактивный тренажер по Git</a>
+        </p>       
+    </section>
+    <section class="scss-info">
+        <p class="info-text">git &mdash; c этого слова начинаются все команды</p>
+        <p class="info-text">репозиторий git &mdash; каталог файловой системы, в котором находятся файлы конфигурации репозитория, файлы журналов, хранящие операции, выполняемые над репозиторием, индекс, описывающий расположение файлов, и хранилище, содержащее собственно файлы</p>
+
+        <h2 class="title">Основные команды</h2>
+        <h3 class="subtitle">Настройка имени</h3>
+        <div class="code">
+            <p class="font-code">git config --global user.name "YourName"</p>
+        </div>
+        <p class="info-text">YourName &mdash; имя</p>
+        <p class="info-text">--global &mdash; настройка будет применена для всех проектов. <br> Чтобы настройка применилась только к одному проекту нужно вместо --global указать --local.</p>
+        <h3 class="subtitle">Настройка электронной почты</h3>
+        <div class="code">
+            <p class="font-code">git config --global user.email "workingfish@mail.ru"</p>
+        </div>
+        <p class="info-text">workingfish@mail.ru &mdash; адрес электронной почты</p>
+        <h3 class="subtitle">Проверить настройки</h3>
+        <div class="code">
+            <p class="font-code">git config --global --list</p>
+        </div>
+        <p class="info-text">Вместо --global может быть --local.</p>
+        <h3 class="subtitle">Перемещение по папкам</h3>
+        <p class="info-text">pwd &mdash; узнать путь к папке, в которой сейчас находишься</p>
+        <p class="info-text">сd название папки &mdash; переход в указанную папку</p>
+        <p class="info-text">cd .. &mdash; переход на одну папку назад</p>
+        <p class="info-text">cd / &mdash; переход на одну папку вперёд</p>
+        <p class="info-text">cd - &mdash; вернуться к предыдущей папке</p>
+        <h3 class="subtitle">Обзор папки</h3>
+        <p class="info-text">ls &mdash; какие файлы есть в папке</p>
+        <h3 class="subtitle">Подготовить к работе репозиторий (делается один раз для одного проекта)</h3>
+        <div class="code">
+            <p class="font-code">git init</p>
+        </div>
+        <p class="info-text">"Init" &mdash; это сокращение от "initialize" ( т.е. "инициализироать" или "включать", "запускать").</p>
+        <p class="info-text">Это значит, что когда пишем "git init", Git "включается" или "запускается" для данного репозитория (т.е. папки).</p>
+        <p class="info-text">Git создает в указанной папке скрытую папку ".git". В этой папке хранятся служебные файлы Git. Кстати, если её удалить, то Git уже не будет "видеть" эту папку (т.е. если мы напишем "git status", нам ответят что это "не Git репозиторий").</p>
+        <h3 class="subtitle">Посмотреть состояние репозитория</h3>
+        <div class="code">
+            <p class="font-code">git status</p>
+        </div>
+        <p class="info-text">Красным выделены файлы, которые git не отслеживает</p>
+        <p class="info-text">Зелёным выделены файлы, которые git отслеживает</p>
+        <h3 class="subtitle">Отслеживать всё</h3>
+        <div class="code">
+            <p class="font-code">git add .</p>
+        </div>
+        <h3 class="subtitle">Отслеживать определённый файл</h3>
+        <div class="code">
+            <p class="font-code">git add index.html</p>
+        </div>
+        <h3 class="subtitle">Просмотр истории коммитов</h3>
+        <div class="code">
+            <p class="font-code">git log</p>
+        </div>
+        <h3 class="subtitle">Зафиксировать изменения</h3>
+        <div class="code">
+            <p class="font-code">git commit -m "Описание, что изменилось"</p>
+        </div>
+        <h3 class="subtitle">Откатить файл до определенного коммита</h3>
+        <div class="code">
+            <p class="font-code">git checkout c73af1de0877fe25eb4648c2356742f253cc000d index.html</p>
+        </div>
+        <p class="info-text">c73af1de0877fe25eb4648c2356742f253cc000d &mdash; хэш коммита</p>
+        <h3 class="subtitle">Исправить последний коммит</h3>
+        <div class="code">
+            <p class="font-code">git commit --amend -m "Правильное сообщение коммита"</p>
+        </div>
+        <h3 class="subtitle">Создать новую ветку</h3>
+        <div class="code">
+            <p class="font-code">git checkout -b имя ветки</p>
+        </div>
+        <h3 class="subtitle">Перемещение на другую ветку</h3>
+        <div class="code">
+            <p class="font-code">git checkout имя ветки</p>
+        </div>
+        
+    </section>
+
+</main>
+</body>
