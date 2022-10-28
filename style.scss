@@ -5,6 +5,10 @@
     flex-direction: row;
 }
 
+@function vw($px-vw, $base-vw: 1920px) {
+    @return ($px-vw * 100vw) / $base-vw
+  }
+
 * {
     box-sizing: border-box;
 }
@@ -26,6 +30,11 @@ body {
     background-color: #E7C2BB;
     padding: 1.563vw;
 
+}
+
+.meta {
+    background-color: #00000021;
+    margin-bottom: vw(60px);
 }
 
 .logo {
@@ -112,4 +121,32 @@ h1 {
     border: 1px solid #d6d5d3;
     font-family: monospace;
     border-radius: 0.521vw;
+}
+
+// .rainbow {
+//     width: 65.625vw;
+// }
+
+.reset-btn {
+    background-color: #e7c2bbc7;
+    width:min-content;
+    font-size: vw(100px);
+    &:hover {
+        cursor: pointer;
+    }
+    margin-bottom: vw(80px);
+}
+
+.css-none {
+    width: vw(1300px);
+    display: none;
+    background-color: #00000021;
+}
+
+.show {
+    display: block;
+}
+
+.bold {
+    font-weight: bold;
 }
