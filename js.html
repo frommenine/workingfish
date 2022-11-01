@@ -153,8 +153,71 @@
             </code></pre> <br>
             <p class="info-text">Это просто специальное значение, которое представляет собой «ничего», «пусто» или «значение неизвестно».</p>
 
+            <h3 class="subtitle">Значение «undefined»</h3> 
+            <p class="info-text">Оно означает, что «значение не было присвоено».</p>
+            <p class="info-text">Если переменная объявлена, но ей не присвоено никакого значения, то её значением будет undefined:</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                let name;
+                alert(name);
+            </code></pre> <br>
 
+            <h3 class="subtitle">Объекты и символы</h3> 
+            <p class="info-text">Все выше указанные типы называются «примитивными», потому что их значениями могут быть только простые значения (будь то строка, или число, или что-то ещё). В объектах же хранят коллекции данных или более сложные структуры.</p>
+            <p class="info-text">Тип symbol (символ) используется для создания уникальных идентификаторов в объектах. Мы упоминаем здесь о нём для полноты картины, изучим этот тип после объектов.</p>
 
+            <h3 class="subtitle">Оператор typeof</h3> 
+            <p class="info-text">Оператор typeof возвращает тип аргумента. Это полезно, когда мы хотим обрабатывать значения различных типов по-разному или просто хотим сделать проверку.</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                typeof undefined // "undefined"
+
+                typeof 0 // "number"
+
+                typeof 10n // "bigint"
+
+                typeof true // "boolean"
+
+                typeof "foo" // "string"
+
+                typeof Symbol("id") // "symbol"
+
+                typeof Math // "object"
+
+                typeof null // "object"  (официально признанная ошибка)
+            </code></pre> <br>
+
+            <h2 class="title">Взаимодействие: alert, prompt, confirm</h2>
+
+            <h3 class="subtitle">alert</h3> 
+            <p class="info-text">Функция показывает сообщение и ждёт, пока пользователь нажмёт кнопку «ОК».</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                alert("Hello");
+            </code></pre> <br>
+
+            <h3 class="subtitle">prompt</h3> 
+            <p class="info-text">Функция prompt принимает два аргумента:</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                result = prompt(title, [default]);
+                alert(`Тебе ${age} лет!`)
+            </code></pre> <br>
+            <p class="info-text">Этот код отобразит модальное окно с текстом, полем для ввода текста и кнопками OK/Отмена.</p>
+            <p class="info-text"><span class="for-tasks">title</span> текст для отображения в окне.</p>
+            <p class="info-text"><span class="for-tasks">default</span> необязательный второй параметр, который устанавливает начальное значение в поле для текста в окне.</p>
+            <p class="info-text">Вызов prompt возвращает текст, указанный в поле для ввода, или null, если ввод отменён пользователем.</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                let age = prompt('Сколько тебе лет?', 100);
+            </code></pre> <br>
+
+            <h3 class="subtitle">confirm</h3> 
+            <p class="info-text">Синтаксис:</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                result = confirm(question);
+            </code></pre> <br>
+
+            <p class="info-text">Функция confirm отображает модальное окно с текстом вопроса <span class="for-tasks">question</span> и двумя кнопками: OK и Отмена.</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                let isBoss = confirm("Ты здесь главный?");
+                alert( isBoss );
+            </code></pre> <br>
 
             
         </section>
