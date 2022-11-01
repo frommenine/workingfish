@@ -7,8 +7,5 @@ function getM() {
 }
 console.log(getM.call(deta));
 
-function css_btn_fun () {
-    document.getElementById("css-block").classList.toggle("show");
-}
 
-//trololo
+

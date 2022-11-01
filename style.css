@@ -131,4 +131,18 @@ h1 {
 
 .bold {
   font-weight: bold;
+}
+
+.js-tasks {
+  background-color: rgba(231, 194, 187, 0.7803921569);
+  width: 15.625vw;
+  height: 0.9375vw;
+  margin-top: 4.1666666667vw;
+  margin-bottom: 2.6041666667vw;
+  padding-left: 0.2604166667vw;
+}
+
+.for-tasks {
+  background-color: #d6d5d3;
+  font-family: monospace;
 }/*# sourceMappingURL=style.css.map */
