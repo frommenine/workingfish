@@ -39,29 +39,36 @@ body {
 
 .logo {
     font-weight: 800;
-    font-size: 1.823vw;
+    font-size: vw(60px);
     letter-spacing: 0.104vw; 
     width: 11.875vw;  
 }
 
 .nav {
+    // top: 0;
     // width: 100vw;
+    font-size: vw(30px);
     display: flex;
     align-items: center;
     justify-content: space-between;
     align-items: center;
+    font-weight: 600;
 }
 
 .nav-list {
+    position: fixed;
+    right: vw(30px);
     display: flex;
     gap: 1.250vw;
+    z-index: 3;
+    background-color: #baa6a6;
 }
 
 .nav-item {
     a {
         color: #000000;
         &:hover {
-            border-bottom: 1px solid black;
+            color: 1px solid #575252;
         }
     }
 }
@@ -77,7 +84,7 @@ h1 {
 }
 
 .main {
-    padding: 1.563vw;
+    padding: 4.563vw;
     padding-top: 2.344vw;
 }
 
@@ -161,7 +168,19 @@ h1 {
 }
 
 .for-tasks {
-    background-color: #d6d5d3;
+    background-color: #d6d5d371;
     font-family: monospace;
+    padding: 0 vw(10px);
+    border-radius: vw(5px);
+}
 
+.js-pic {
+    width: vw(1000px);
+}
+
+.important::before {
+    content: '|';
+    color: #d6d5d3;
+    font-size: vw(50px);
+    font-weight: bold;
 }

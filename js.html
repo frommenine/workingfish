@@ -15,13 +15,13 @@
     <header class="header">
         <nav class="nav">
             <p class="logo">workingfish</p>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="./html-page.html">html</a></li> 
-                <li class="nav-item"><a href="./css.html">css</a></li>
-                <li class="nav-item"><a href="./scss.html">scss</a></li>
+            <ul class="nav-list" id="menu-start">
+                <li class="nav-item"><a href="http://workingfish.tilda.ws/">html</a></li> 
+                <li class="nav-item"><a href="http://workingfish.tilda.ws/page-css">css</a></li>
+                <!-- <li class="nav-item"><a href="/scss.html">scss</a></li> -->
                 <li class="nav-item"><a href="./git.html">git</a></li>
-                <li class="nav-item"><a href="./github.html">github</a></li>
-                <li class="nav-item"><a href="">figma</a></li>
+                <!-- <li class="nav-item"><a href="./github.html">github</a></li> -->
+                <!-- <li class="nav-item"><a href="">figma</a></li> -->
                 <li class="nav-item"><a href="./js.html">js</a></li>
                 <li class="nav-item"><a href="./tasks.html">tasks</a></li>
             </ul>
@@ -49,21 +49,14 @@
             <p class="info-text">script.js &mdash; имя JS-файла</p>
             <h2 class="title">Переменные</h2>
             <p class="info-text">Переменная &mdash; это хранилище для данных</p>
-            <p class="info-text"><strong style="font-weight: bold;">let</strong> &mdash; ключевое слово для создания переменной</p>
-            <pre class="rainbow"><code data-language="JavaScript">
-                let name;
-            </code></pre>
-            <p class="info-text"> В примере выше мы создали (объявили) переменную. Далее мы помещаем в переменную данные: </p>
-            <pre class="rainbow"><code data-language="JavaScript">
-                let name;
-                name = 'John';
-            </code></pre>
-
-            <p class="info-text"> Для краткости можно совместить объявление переменной и запись данных в одну строку:</p>
+            <p class="info-text"><span class="for-tasks">let</span>&mdash; ключевое слово для создания переменной</p>
+            <p class="info-text"> Пример: </p>
             <pre class="rainbow"><code data-language="JavaScript">
                 let name = 'John';
             </code></pre>
-
+            <p class="info-text"><span class="for-tasks">let</span> &mdash; ключевое слово для создания переменной</p>
+            <p class="info-text"><span class="for-tasks">name</span> &mdash; имя переменной</p>
+            <p class="info-text"><span class="for-tasks">'John'</span> &mdash; значение переменной</p>
             <p class="info-text"> Мы также можем объявить несколько переменных в одной строке:</p>
             <pre class="rainbow"><code data-language="JavaScript">
                 let user = 'John', age = 25, message = 'Hello';
@@ -82,17 +75,14 @@
             </code></pre>
 
             <p class="info-text">&mdash; Переменная может быть объявлена только один раз;</p>
-            <p class="info-text">&mdash; Повторное объявление той же переменной является ошибкой;</p>
             <p class="info-text">&mdash; Имя переменной должно содержать только буквы, цифры или символы $ и _;</p>
-            <p class="info-text">&mdash; Первый символ не должен быть цифрой.;</p>
+            <p class="info-text">&mdash; Первый символ не должен быть цифрой;</p>
             <p class="info-text">&mdash; Если имя содержит несколько слов, обычно используется верблюжья нотация, то есть, слова следуют одно за другим, где каждое следующее слово начинается с заглавной буквы: myVeryLongName;</p>
             <p class="info-text">&mdash; Переменные с именами apple и APPLE – это две разные переменные;</p>
             <p class="info-text">&mdash; Существует <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Lexical_grammar#%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%B2%D1%8B%D0%B5_%D1%81%D0%BB%D0%BE%D0%B2%D0%B0" target="_blank">список зарезервированных слов</a>, которые нельзя использовать в качестве имён переменных, потому что они используются самим языком.;</p>
 
             <!-- ТИПЫ ДАННЫХ -->
             <h2 class="title">Типы данных</h2>
-            <p class="info-text">Есть восемь основных типов данных в JavaScript</p>
-
             <h3 class="subtitle">Число</h3>
             <p class="info-text">Кроме обычных чисел, существуют так называемые «специальные числовые значения», которые относятся к этому типу данных: <span class="bold">Infinity</span>, <span class="bold">-Infinity</span> и <span class="bold">NaN</span>.</p> <br>
             <p class="info-text"><span class="bold">Infinity</span> представляет собой математическую бесконечность ∞. Это особое значение, которое больше любого числа</p>
@@ -218,6 +208,142 @@
                 let isBoss = confirm("Ты здесь главный?");
                 alert( isBoss );
             </code></pre> <br>
+
+
+            <h2 class="title">Преобразование типов</h2>
+            <h3 class="subtitle">Строковое преобразование</h3> 
+            <p class="info-text">Строковое преобразование происходит, когда требуется представление чего-либо в виде строки.</p>
+            <p class="info-text">Функция <span class="for-tasks">String(value)</span>, преобразует значение к строке:</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                let value = true;
+                alert(typeof value); 
+                value = String(value); 
+                alert(typeof value);
+            </code></pre> <br>
+
+
+
+            <h3 class="subtitle">Численное преобразование</h3> 
+            <p class="info-text">Численное преобразование происходит в математических функциях и выражениях.</p>
+            <p class="info-text">Функция <span class="for-tasks">Number(value)</span>, преобразует value к числу:</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                let str = "123";
+                alert(typeof str); 
+                let num = Number(str);
+                alert(typeof num);
+            </code></pre> <br>
+            <p class="info-text">Если строка не может быть явно приведена к числу, то результатом преобразования будет <span class="for-tasks">NaN</span>.</p>
+            <p class="info-text">Правила численного преобразования:</p>
+            <img src="./img/js/js-pic-1.png" alt="js img" class="js-pic">
+
+
+            <h3 class="subtitle">Логическое преобразование</h3> 
+            <p class="info-text">Функция <span class="for-tasks">Boolean(value)</span>, преобразует value к логическому значению.</p>
+            <p class="info-text">Правила преобразования:</p>
+            <p class="info-text">Значения, которые интуитивно «пустые», вроде 0, пустой строки, null, undefined и NaN, становятся false.</p>
+            <p class="info-text">Все остальные значения становятся true</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                alert( Boolean(1) ); // true
+                alert( Boolean(0) ); // false
+
+                alert( Boolean("Привет!") ); // true
+                alert( Boolean("") ); // false
+            </code></pre> <br>
+
+            <h2 class="title">Базовые операторы, математика</h2>
+            <h3 class="subtitle">математические операторы</h3> 
+            <p class="info-text important">Сложение <span class="for-tasks">+</span></p>
+            <p class="info-text important">Вычитание <span class="for-tasks">-</span></p>
+            <p class="info-text important">Умножение <span class="for-tasks">*</span></p>
+            <p class="info-text important">Деление <span class="for-tasks">/</span></p>
+            <p class="info-text important">Взятие остатка от деления <span class="for-tasks">%</span></p>
+            <p class="info-text important">Возведение в степень <span class="for-tasks">**</span></p>
+            <p class="info-text important">В примере <span class="for-tasks">9 + 3</span></p>
+            <p class="info-text important"><span class="for-tasks">9</span> это операнд, 
+                <span class="for-tasks">3</span> тоже операнд. 
+                Сложение <span class="for-tasks">+</span> это оператор. 
+            </p>
+            <p class="info-text">Операторы бывают унарными и бинарными. 
+                Унарным называется оператор, который применяется к одному операнду.
+            </p>
+
+            <h3 class="subtitle">Бинарный оператор +</h3> 
+            <p class="info-text">С помощью бинарного оператора <span class="for-tasks">+</span> можно объединить строки:</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                let greeting = "Hello" + "John";
+                alert(greeting); 
+            </code></pre> <br>
+            <p class="info-text important">Если хотя бы один операнд является строкой, то второй будет также преобразован в строку:</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                alert( '1' + 2 ); 
+            </code></pre> <br>
+
+            <h3 class="subtitle">Унарный оператор +</h3> 
+            <p class="info-text">Унарный оператор <span class="for-tasks">+</span> преобразует не числа в числа:</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                alert( +true ); // 1
+                alert( +"" ); // 0
+            </code></pre> <br>
+
+            <h3 class="subtitle">Приоритет операторов</h3> 
+            <p class="info-text">В том случае, если в выражении есть несколько операторов – 
+                порядок их выполнения определяется приоритетом, или, другими словами, 
+                существует определённый порядок выполнения операторов.
+            </p>
+            <p class="info-text">Скобки важнее, чем приоритет, так что, если мы не удовлетворены порядком 
+                по умолчанию, мы можем использовать их, чтобы изменить приоритет. Например, написать (1 + 2) * 2.
+            </p>
+            <p class="info-text"><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence" target="_blank">Таблица приоритетов</a></p>
+            <h3 class="subtitle">Сокращённая арифметика с присваиванием</h3> 
+            <p class="info-text">Часто нужно применить оператор к переменной и сохранить результат в ней же:</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                let n = 2;
+                n = n + 5;
+                n = n * 2;
+            </code></pre> <br>
+            <p class="info-text">Эту запись можно укоротить при помощи совмещённых операторов += и *=:</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                let n = 2;
+                n += 5; // теперь n = 7 (работает как n = n + 5)
+                n *= 2; // теперь n = 14 (работает как n = n * 2)
+
+                alert( n ); // 14
+            </code></pre> <br>
+            <p class="info-text"><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_Operators#%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B" target="_blank">Таблица сокращений</a></p>
+            
+            <h3 class="subtitle">Инкремент/декремент</h3> 
+            <p class="info-text">Инкремент <span class="for-tasks">++</span> увеличивает переменную на 1:</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                let counter = 2;
+                counter++;        // работает как counter = counter + 1, просто запись короче
+                alert( counter ); // 3
+            </code></pre> <br>
+
+            <p class="info-text">Декремент <span class="for-tasks">--</span> уменьшает переменную на 1:</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                let counter = 2;
+                counter--;        // работает как counter = counter - 1, просто запись короче
+                alert( counter ); // 1
+            </code></pre> <br>
+
+            <p class="info-text">Когда оператор идёт после переменной — это «постфиксная форма»: <span class="for-tasks">counter++</span></p>
+            <p class="info-text">«Префиксная форма» — это когда оператор идёт перед переменной: <span class="for-tasks">++counter</span></p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                let counter = 1;
+                let a = ++counter; // (*)
+                alert(a); // 2
+            </code></pre> <br>
+            <p class="info-text">В примере выше префиксная форма <span class="for-tasks">++counter</span> увеличивает counter и возвращает новое значение 2.</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                let counter = 1;
+                let a = counter++; // (*) меняем ++counter на counter++
+                alert(a); // 1
+            </code></pre> <br>
+            <p class="info-text">Постфиксная форма <span class="for-tasks">counter++</span>  также увеличивает counter, но возвращает старое значение (которое было до увеличения). </p>
+
+
+
+            <!-- <h3 class="subtitle">Оператор «запятая»</h3>  -->
 
             
         </section>
