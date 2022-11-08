@@ -8,4 +8,24 @@ function getM() {
 console.log(getM.call(deta));
 
 
+// FIXED MENU
 
+let = fixedMenuStart = 'menu-start';
+
+var ID_MENU = "menu";//ИД меню
+window.onload = function(){
+  	document.getElementById(fixedMenuStart).classList.add("bgColor1");
+window.addEventListener("scroll",function(){
+	var element = document.getElementById(ID_MENU);
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;//текущая позиция скролла
+  if(scrollTop == 0){
+  	
+  	document.getElementById(ID_MENU).classList.remove("bgColor2");
+  	document.getElementById(ID_MENU).classList.add("bgColor1");
+  }
+  else{
+  	document.getElementById(ID_MENU).classList.remove("bgColor1");
+  	document.getElementById(ID_MENU).classList.add("bgColor2");
+    }
+});
+}
