@@ -33,7 +33,7 @@ body {
 }
 
 .nav {
-  font-size: 1.5625vw;
+  font-size: 2.0833333333vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,7 +43,9 @@ body {
 
 .nav-list {
   position: fixed;
-  right: 1.5625vw;
+  top: 0;
+  padding: 1.0416666667vw 1.0416666667vw;
+  right: 0;
   display: flex;
   gap: 1.25vw;
   z-index: 3;
@@ -131,7 +133,8 @@ h1 {
   background-color: rgba(0, 0, 0, 0.1294117647);
 }
 
-.show {
+.show,
+.css-block {
   display: block;
 }
 
@@ -164,4 +167,9 @@ h1 {
   color: #d6d5d3;
   font-size: 2.6041666667vw;
   font-weight: bold;
+}
+
+.gif {
+  position: absolute;
+  width: 15.625vw;
 }/*# sourceMappingURL=style.css.map */

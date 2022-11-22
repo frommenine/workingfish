@@ -7,6 +7,7 @@
     <title>tasks</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js-block.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link href="./css/paraiso-light.css" rel="stylesheet" type="text/css">
 
@@ -16,9 +17,12 @@
     <header class="header">
         <nav class="nav">
             <p class="logo">workingfish</p>
+            <img class="gif" src="./img/WXfH.gif" alt="">
             <ul class="nav-list">
+                <li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSea5D1-fFl5oIH2ea19UwezvnhdCMmwYqWmR9k_0pTmqiX7mA/viewform">опрос</a></li> 
                 <li class="nav-item"><a href="http://workingfish.tilda.ws/">html</a></li> 
                 <li class="nav-item"><a href="http://workingfish.tilda.ws/page-css">css</a></li>
+                <li class="nav-item"><a href="http://workingfish.tilda.ws/practice">practice</a></li>                 
                 <!-- <li class="nav-item"><a href="/scss.html">scss</a></li> -->
                 <li class="nav-item"><a href="./git.html">git</a></li>
                 <!-- <li class="nav-item"><a href="./github.html">github</a></li> -->
@@ -29,124 +33,189 @@
         </nav>
     </header>
     <main class="main">
-        <p class="tasks-links"><a href="https://onlinetestpad.com/f32nmlqdero5m" target="_blank">#0 html</a></p>
+        <!-- <p class="tasks-links"><a href="https://onlinetestpad.com/f32nmlqdero5m" target="_blank">#0 html</a></p>
         <p class="tasks-links"><a href="https://onlinetestpad.com/7o53gbwa353m2" target="_blank">#1 css</a></p>
-        <p class="tasks-links"><a href="https://onlinetestpad.com/4xgjc65qyzk3c" target="_blank">#2 git</a></p>
+        <p class="tasks-links"><a href="https://onlinetestpad.com/4xgjc65qyzk3c" target="_blank">#2 git</a></p> -->
     
-        <h2 class="js-tasks">JS #2</h2>
+        <div onclick="js2_fun()" class="reset-btn">#2</div>
+        <div class="none" id="js2">
+            <h3 class="subtitle">2/1</h3>
+            <p class="info-text">Что выведет этот скрипт?</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                let name = "John";
+                alert( `hello ${1}` ); 
+                alert( `hello ${"name"}` ); 
+                alert( `hello ${name}` );
+            </code></pre> <br>
+    
+            <h3 class="subtitle">2/2</h3>
+            <p class="info-text">Выведите на экран друг за другом три имени: <span class="for-tasks">Kanye, Rakim, Aubrey.</span> </p>
+            <p class="info-text">Для каждого имени используйте свой собственный вызов console.log(). </p>
+    
+            <h3 class="subtitle">2/3</h3>
+            <p class="info-text">Найдите в программе необъявленную переменную и объявите её, присвоив ей значение Piggy.</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                let name = 'John';
+                console.log(family);
+                console.log('and');
+                console.log(pet);
+            </code></pre> <br>
+    
+            <h3 class="subtitle">2/3</h3>
+            <p class="info-text">Выведите на экран строку  <span class="for-tasks">Do you want to play, &lt;name&gt;?</span>, где вместо <span class="for-tasks">&lt;name&gt;</span> 
+                должна использоваться константа <span class="for-tasks">saw</span>.
+                Вывод должен получиться таким: <span class="for-tasks">Do you want to play, John?</span>
+            </p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                    const saw = 'John';
+            </code></pre> <br>
+    
+            <h3 class="subtitle">2/4</h3>
+            <p class="info-text"> Используя функцию <span class="for-tasks">prompt</span> запросите у пользователя следующую информацию:
+            </p>
+            <p class="info-text">Как тебя зовут?</p>
+            <p class="info-text">Сколько тебе лет?</p>
+            <p class="info-text">Какой твой любимый цвет?</p>
+            <p class="info-text"> Далее с помощью <span class="for-tasks">alert</span> выведите на экран введённую пользователем информацию в следующем виде:</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                    'Тебя зовут &lt;name&gt;'
+                    'Тебе &lt;age&gt; лет'
+                    'Твой любимый цвет &lt;color&gt;'
+            </code></pre> <br>
+            <p class="info-text">Вместо <span class="for-tasks">&lt;name&gt;, &lt;age&gt;, &lt;color&gt;</span> должна быть отображена введённая пользователем информация.</p>
+    
+        </div>
+        <!-- <h2 class="js-tasks">JS #2</h2> -->
 
-        <h3 class="subtitle">2/1</h3>
-        <p class="info-text">Что выведет этот скрипт?</p>
-        <pre class="rainbow"><code data-language="JavaScript">
-            let name = "John";
-            alert( `hello ${1}` ); 
-            alert( `hello ${"name"}` ); 
-            alert( `hello ${name}` );
-        </code></pre> <br>
+        <div onclick="js3_fun()" class="reset-btn">#3</div>
+        <div class="none" id="js3">
+            <h3 class="subtitle">3/1</h3>
+            <p class="info-text">Cоздайте переменную с числовым значением, а затем  преобразуйте его в строку.</p>
+            <h3 class="subtitle">3/2</h3>
+            <p class="info-text">Запросите у пользователя дату его рождения и выведите на экран возраст пользователя в текущем году.</p>
+            <h3 class="subtitle">3/3</h3>
+            <p class="info-text">Напишите скрипт, который будет считать количество секунд в введённом пользователем количестве часов.
+                Выведите резульат на экран.
+            </p>
+            <h3 class="subtitle">3/4</h3>
+            <p class="info-text">Переделайте приведенный код так, чтобы в нем использовались сокращенные операции</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                let num = 1;
+                num = num + 12;
+                num = num - 14;
+                num = num * 5;
+                num = num / 7;
+                num = num + 1;
+                num = num - 1;
+            </code></pre> <br>
 
-        <h3 class="subtitle">2/2</h3>
-        <p class="info-text">Выведите на экран друг за другом три имени: <span class="for-tasks">Kanye, Rakim, Aubrey.</span> </p>
-        <p class="info-text">Для каждого имени используйте свой собственный вызов console.log(). </p>
+            <h3 class="subtitle">3/5</h3>
+            <p class="info-text">Создайте переменные a=17 и b=10. Отнимите от a переменную b и результат присвойте переменной c. Затем создайте переменную d, присвойте ей значение 7. Сложите переменные c и d, а результат запишите в переменную result. Выведите на экран значение переменной result.</p>
+        
+            <h3 class="subtitle">3/6</h3>
+            <p class="info-text">Напишите скрипт, который считает количество секунд в часе, в сутках, в месяце</p>
 
-        <h3 class="subtitle">2/3</h3>
-        <p class="info-text">Найдите в программе необъявленную переменную и объявите её, присвоив ей значение Piggy.</p>
-        <pre class="rainbow"><code data-language="JavaScript">
-            let name = 'John';
-            console.log(family);
-            console.log('and');
-            console.log(pet);
-        </code></pre> <br>
+            <h3 class="subtitle">3/7</h3>
+            <p class="info-text">Создайте три переменные - час, минута, секунда. С их помощью выведите текущее время в формате 'час:минута:секунда'.</p>
+        </div>
 
-        <h3 class="subtitle">2/3</h3>
-        <p class="info-text">Выведите на экран строку  <span class="for-tasks">Do you want to play, &lt;name&gt;?</span>, где вместо <span class="for-tasks">&lt;name&gt;</span> 
-            должна использоваться константа <span class="for-tasks">saw</span>.
-            Вывод должен получиться таким: <span class="for-tasks">Do you want to play, John?</span>
+        <div onclick="js4_fun()" class="reset-btn">#4</div>
+        <div class="none" id="js4">
+            <h3 class="subtitle">1/4</h3>
+            <p class="info-text">Используя конструкцию if..else, напишите код, который получает число через prompt, 
+                а затем выводит в alert 
+                (Предполагается, что пользователь вводит только числа.):
+            </p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                1, если значение больше нуля,
+                -1, если значение меньше нуля,
+                0, если значение равно нулю.
+            </code></pre> <br>
+
+            <h3 class="subtitle">2/4</h3>
+            <p class="info-text">Требуется спросить у пользователя: ФИО (раздельно), возраст в годах, 
+                пол (с помощью confirm, например "Ваш пол -- мужской?". И вывести используя alert анкету 
+                пользователя по примеру:
+            </p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                Ваше ФИО: Ракимов Раким Ракимович;
+                Ваш возраст в годах: 20;
+                Ваш возраст в днях: 7300;
+                Через 5 лет Вам будет: 25;
+                Ваш пол: мужской;
+                Вы на пенсии: нет.
+            </code></pre> <br>
+            <h3 class="subtitle">3/4</h3>
+            <p class="info-text">Перепишите конструкцию if с использованием условного оператора '?':</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                let result;
+
+                if (a + b < 4) {
+                result = 'Мало';
+                } else {
+                result = 'Много';
+                }
+            </code></pre> <br>
+        </div>
+
+        <div onclick="js5_fun()" class="reset-btn">#5</div>
+        <div class="none" id="js5">
+            <h3 class="subtitle">1/5</h3>
+            <p class="info-text">Выведите в alert числа от 1 до 5 с помощью while, do...while, for</p>
+            <h3 class="subtitle">2/5</h3>
+            <p class="info-text">При помощи цикла for выведите чётные числа от 2 до 10.</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                i % 2 == 0 //для проверки на чётность
+            </code></pre> <br>
+
+            <h3 class="subtitle">3/5</h3>
+            <p class="info-text">Перепишите код, заменив цикл for на while, без изменения поведения цикла.</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                for (let i = 0; i < 3; i++) {
+                    alert( `number ${i}!` );
+                }
+            </code></pre> <br>
+
+            <h3 class="subtitle">3/6</h3>
+            <p class="info-text">Напишите if..else, соответствующий следующему switch:</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                switch (browser) {
+                    case 'Edge':
+                    alert( "You've got the Edge!" );
+                    break;
+                
+                    case 'Chrome':
+                    case 'Firefox':
+                    case 'Safari':
+                    case 'Opera':
+                    alert( 'Okay we support these browsers too' );
+                    break;
+                
+                    default:
+                    alert( 'We hope that this page looks ok!' );
+                }
+            </code></pre> <br>
+
+            <h3 class="subtitle">3/7</h3>
+            <p class="info-text">Перепишите код с использованием одной конструкции switch:</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                const number = +prompt('Введите число между 0 и 3', '');
+
+                if (number === 0) {
+                alert('Вы ввели число 0');
+                }
+
+                if (number === 1) {
+                alert('Вы ввели число 1');
+                }
+
+                if (number === 2 || number === 3) {
+                alert('Вы ввели число 2, а может и 3');
+                }
+            </code></pre> <br>
+        </div>
+        <p class="info-text"><a href="https://onlinetestpad.com/ks4n4ln47ddbm" target="_blank" style="color: #575252; font-size: 40px; font-weight: bold;">Test</a>
         </p>
-        <pre class="rainbow"><code data-language="JavaScript">
-                const saw = 'John';
-        </code></pre> <br>
-
-        <h3 class="subtitle">2/4</h3>
-        <p class="info-text"> Используя функцию <span class="for-tasks">prompt</span> запросите у пользователя следующую информацию:
-        </p>
-        <p class="info-text">Как тебя зовут?</p>
-        <p class="info-text">Сколько тебе лет?</p>
-        <p class="info-text">Какой твой любимый цвет?</p>
-        <p class="info-text"> Далее с помощью <span class="for-tasks">alert</span> выведите на экран введённую пользователем информацию в следующем виде:</p>
-        <pre class="rainbow"><code data-language="JavaScript">
-                'Тебя зовут &lt;name&gt;'
-                'Тебе &lt;age&gt; лет'
-                'Твой любимый цвет &lt;color&gt;'
-        </code></pre> <br>
-        <p class="info-text">Вместо <span class="for-tasks">&lt;name&gt;, &lt;age&gt;, &lt;color&gt;</span> должна быть отображена введённая пользователем информация.</p>
-
-        <h3 class="subtitle">3/1</h3>
-        <p class="info-text">Cоздайте переменную с числовым значением, а затем  преобразуйте его в строку.</p>
-        <h3 class="subtitle">3/2</h3>
-        <p class="info-text">Запросите у пользователя дату его рождения и выведите на экран возраст пользователя в текущем году.</p>
-        <h3 class="subtitle">3/3</h3>
-        <p class="info-text">Напишите скрипт, который будет считать количество секунд в введённом пользователем количестве часов.
-            Выведите резульат на экран.
-        </p>
-        <h3 class="subtitle">3/4</h3>
-        <p class="info-text">Переделайте приведенный код так, чтобы в нем использовались сокращенные операции</p>
-        <pre class="rainbow"><code data-language="JavaScript">
-            let num = 1;
-            num = num + 12;
-            num = num - 14;
-            num = num * 5;
-            num = num / 7;
-            num = num + 1;
-            num = num - 1;
-        </code></pre> <br>
-
-        <h3 class="subtitle">3/5</h3>
-        <p class="info-text">Создайте переменные a=17 и b=10. Отнимите от a переменную b и результат присвойте переменной c. Затем создайте переменную d, присвойте ей значение 7. Сложите переменные c и d, а результат запишите в переменную result. Выведите на экран значение переменной result.</p>
-       
-        <h3 class="subtitle">3/6</h3>
-        <p class="info-text">Напишите скрипт, который считает количество секунд в часе, в сутках, в месяце</p>
-
-        <h3 class="subtitle">3/7</h3>
-        <p class="info-text">Создайте три переменные - час, минута, секунда. С их помощью выведите текущее время в формате 'час:минута:секунда'.</p>
-
-
-        <h3 class="subtitle">1/4</h3>
-        <p class="info-text">Используя конструкцию if..else, напишите код, который получает число через prompt, 
-            а затем выводит в alert 
-            (Предполагается, что пользователь вводит только числа.):
-        </p>
-        <pre class="rainbow"><code data-language="JavaScript">
-            1, если значение больше нуля,
-            -1, если значение меньше нуля,
-            0, если значение равно нулю.
-        </code></pre> <br>
-
-        <h3 class="subtitle">2/4</h3>
-        <p class="info-text">Требуется спросить у пользователя: ФИО (раздельно), возраст в годах, 
-            пол (с помощью confirm, например "Ваш пол -- мужской?". И вывести используя alert анкету 
-            пользователя по примеру:
-        </p>
-        <pre class="rainbow"><code data-language="JavaScript">
-            Ваше ФИО: Ракимов Раким Ракимович;
-            Ваш возраст в годах: 20;
-            Ваш возраст в днях: 7300;
-            Через 5 лет Вам будет: 25;
-            Ваш пол: мужской;
-            Вы на пенсии: нет.
-        </code></pre> <br>
-        <h3 class="subtitle">3/4</h3>
-        <p class="info-text">Перепишите конструкцию if с использованием условного оператора '?':</p>
-        <pre class="rainbow"><code data-language="JavaScript">
-            let result;
-
-            if (a + b < 4) {
-            result = 'Мало';
-            } else {
-            result = 'Много';
-            }
-        </code></pre> <br>
-
-
 
 
     </main>
@@ -157,4 +226,5 @@
     <script src="./rainbow-custom.min.js"></script>
     <script src="/assets/js/language/generic.js"></script>
     <script src="/assets/js/language/python.js"></script>
+    <script src="./index.js"></script>
 </body>

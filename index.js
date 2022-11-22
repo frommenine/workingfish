@@ -1,11 +1,28 @@
-"use strict";
-const deta = {
-    mes: 'Httttte',
+// "use strict";
+// const deta = {
+//     mes: 'Httttte',
+// }
+// function getM() {
+//     return this.mes;
+// }
+// console.log(getM.call(deta));
+
+
+function js2_fun() {
+    document.getElementById("js2").classList.toggle("show");
 }
-function getM() {
-    return this.mes;
+
+function js3_fun() {
+    document.getElementById("js3").classList.toggle("show");
 }
-console.log(getM.call(deta));
+
+function js4_fun() {
+    document.getElementById("js4").classList.toggle("show");
+}
+
+function js5_fun() {
+    document.getElementById("js5").classList.toggle("show");
+}
 
 
 // FIXED MENU
@@ -29,3 +46,4 @@ window.addEventListener("scroll",function(){
     }
 });
 }
+
