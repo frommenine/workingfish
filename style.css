@@ -10,6 +10,7 @@ body {
   font-weight: 500;
   font-size: 1.563vw;
   line-height: 1.875vw;
+  cursor: url(./img/hol446.Cur);
 }
 
 .header {
@@ -172,4 +173,21 @@ h1 {
 .gif {
   position: absolute;
   width: 15.625vw;
+}
+
+.mmain a {
+  font-size: 5.2083333333vw;
+  color: #f0b8ad;
+}
+.mmain a:hover {
+  text-shadow: 0 0 5px #fff, 0 0 3px #fff, 0 0 5px #fff;
+}
+
+.mmain {
+  font-weight: bold;
+  line-height: 4.1666666667vw;
+  padding: 4.1666666667vw;
+  margin-top: 1.0416666667vw;
+  background-color: rgba(231, 194, 187, 0.7803921569);
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

@@ -20,6 +20,8 @@ body {
     font-weight: 500;
     font-size: 1.563vw;
     line-height: 1.875vw;
+    cursor: url(./img/hol446.Cur);
+
 }
 
 .header {
@@ -194,3 +196,21 @@ h1 {
     width: vw(300px);
 }
 
+.mmain a {
+    font-size: vw(100px);
+    color: #f0b8ad;
+    &:hover {
+        // text-shadow: 0 0 18px #fff, 0 0 24px #fff, 0 0 8px #fff;
+        text-shadow: 0 0 5px #fff, 0 0 3px #fff, 0 0 5px #fff;
+    }
+}
+
+.mmain {
+    font-weight: bold;
+    line-height: vw(80px);
+    padding: vw(80px);
+    margin-top: vw(20px);
+    background-color: #e7c2bbc7;
+    text-align: center;
+
+}
