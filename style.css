@@ -190,4 +190,12 @@ h1 {
   margin-top: 1.0416666667vw;
   background-color: rgba(231, 194, 187, 0.7803921569);
   text-align: center;
+}
+
+.info-text a {
+  color: #575252;
+}
+.info-text a:hover {
+  text-transform: uppercase;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
