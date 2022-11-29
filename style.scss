@@ -144,6 +144,8 @@ h1 {
     font-size: vw(100px);
     &:hover {
         cursor: pointer;
+        // text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 3px  rgb(0, 0, 0), 0 0 5px #fff;
+
     }
     margin-bottom: vw(80px);
 }
@@ -212,5 +214,12 @@ h1 {
     margin-top: vw(20px);
     background-color: #e7c2bbc7;
     text-align: center;
+}
 
+.info-text a {
+    color: #575252;
+    &:hover {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
 }

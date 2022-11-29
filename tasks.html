@@ -14,7 +14,7 @@
 
 </head>
 <body>
-    <header class="header">
+    <header class="header" style="background-color: #e7c2bbc7;">
         <nav class="nav">
             <p class="logo">workingfish</p>
             <img class="gif" src="./img/WXfH.gif" alt="">
@@ -31,6 +31,10 @@
                 <li class="nav-item"><a href="./tasks.html">tasks</a></li>
             </ul>
         </nav>
+        <div class="mmain">
+            <p><a href="https://learn.javascript.ru/comparison" target="_blank">Учебник learnjavascript</a></p>
+            <p><a href="https://sore-valley-72f.notion.site/JS-for-babies-0308f800df454a5ebb7b11daec9bc13d" target="_blank">Конспекты</a></p>
+        </div>
     </header>
     <main class="main">
         <!-- <p class="tasks-links"><a href="https://onlinetestpad.com/f32nmlqdero5m" target="_blank">#0 html</a></p>
@@ -160,15 +164,15 @@
 
         <div onclick="js5_fun()" class="reset-btn">#5</div>
         <div class="none" id="js5">
-            <h3 class="subtitle">1/5</h3>
+            <h3 class="subtitle">5:1</h3>
             <p class="info-text">Выведите в alert числа от 1 до 5 с помощью while, do...while, for</p>
-            <h3 class="subtitle">2/5</h3>
+            <h3 class="subtitle">5:2</h3>
             <p class="info-text">При помощи цикла for выведите чётные числа от 2 до 10.</p>
             <pre class="rainbow"><code data-language="JavaScript">
                 i % 2 == 0 //для проверки на чётность
             </code></pre> <br>
 
-            <h3 class="subtitle">3/5</h3>
+            <h3 class="subtitle">5:3</h3>
             <p class="info-text">Перепишите код, заменив цикл for на while, без изменения поведения цикла.</p>
             <pre class="rainbow"><code data-language="JavaScript">
                 for (let i = 0; i < 3; i++) {
@@ -176,7 +180,7 @@
                 }
             </code></pre> <br>
 
-            <h3 class="subtitle">3/6</h3>
+            <h3 class="subtitle">5:4</h3>
             <p class="info-text">Напишите if..else, соответствующий следующему switch:</p>
             <pre class="rainbow"><code data-language="JavaScript">
                 switch (browser) {
@@ -196,7 +200,7 @@
                 }
             </code></pre> <br>
 
-            <h3 class="subtitle">3/7</h3>
+            <h3 class="subtitle">5:6</h3>
             <p class="info-text">Перепишите код с использованием одной конструкции switch:</p>
             <pre class="rainbow"><code data-language="JavaScript">
                 const number = +prompt('Введите число между 0 и 3', '');
@@ -213,6 +217,106 @@
                 alert('Вы ввели число 2, а может и 3');
                 }
             </code></pre> <br>
+        </div>
+
+        <div onclick="js6_fun()" class="reset-btn">#6</div>
+        <div class="none" id="js6">
+            <h3 class="subtitle">6.1</h3>
+            <p class="info-text">Перепишите функцию, используя оператор <span class="for-tasks">'?'</span> и <span class="for-tasks">'||'</span></p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                function checkAge(age) {
+                    if (age > 18) {
+                      return true;
+                    } else {
+                      return confirm('Родители разрешили?');
+                    }
+                  }
+            </code></pre> <br>
+
+            <h3 class="subtitle">6.2</h3>
+            <p class="info-text">Напишите функцию <span class="for-tasks">min(a,b)</span>, которая возвращает меньшее из чисел <span class="for-tasks">a</span> и <span class="for-tasks">b</span>.</p>
+            <p class="info-text">Пример вызовов:</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                min(2, 5) //2
+                min(3, -1) //-1
+                min(1, 1) //1
+            </code></pre> <br>
+
+            <h3 class="subtitle">6.3</h3>
+            <p class="info-text">Напишите функцию <span class="for-tasks">pow(x,n)</span>, которая возвращает 
+                <span class="for-tasks">x</span> в степени <span class="for-tasks">n</span>. 
+                Иначе говоря, умножает <span class="for-tasks">x</span> на себя <span class="for-tasks">n</span> раз и возвращает результат.
+            </p>
+            <p class="info-text">В этой задаче функция обязана поддерживать только натуральные значения n, т.е. целые от 1 и выше.</p>
+            <p class="info-text">Создайте страницу, которая запрашивает <span class="for-tasks">x</span> и <span class="for-tasks">n</span>, а затем выводит 
+                результат <span class="for-tasks">pow(x,n)</span>.
+            </p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                pow(3, 2) = 3 * 3 = 9
+                pow(3, 3) = 3 * 3 * 3 = 27
+                pow(1, 100) = 1 * 1 * ...* 1 = 1
+            </code></pre> <br>
+            <h3 class="subtitle">6.4</h3>
+            <p class="info-text">Замените код Function Expression стрелочной функцией:</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                function ask(question, yes, no) {
+                    if (confirm(question)) yes()
+                    else no();
+                  }
+                  
+                  ask(
+                    "Вы согласны?",
+                    function() { alert("Вы согласились."); },
+                    function() { alert("Вы отменили выполнение."); }
+                  );
+            </code></pre> <br>
+
+            <h3 class="subtitle">6.5</h3>
+            <p class="info-text">Напишите функцию <span class="for-tasks">printNumbers()</span>, которая выводит числа в обратном порядке в консоле.</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                printNumbers(3);
+                3
+                2
+                1
+                finished!
+            </code></pre> <br>
+
+            <h3 class="subtitle">6.6</h3>
+            <p class="info-text">Определите площадь наибольшего квадрата, который может вписаться в круг радиусом r .</p>
+            <pre class="rainbow"><code data-language="JavaScript">
+                function areaLargestSquare(r) {
+                    //code here
+                  }
+            </code></pre> <br>
+
+            <h3 class="subtitle">6.7</h3>
+            <p class="info-text"><a href="https://www.codewars.com/kata/583710ccaa6717322c000105/train/javascript" target="_blank">Codewars. Simple multiplication</a></p>
+
+            <h3 class="subtitle">6.8</h3>
+            <p class="info-text"><a href="https://www.codewars.com/kata/students-final-grade" target="_blank">Codewars. Student's Final Grade</a></p>
+
+            <h3 class="subtitle">6.9</h3>
+            <p class="info-text"><a href="https://www.codewars.com/kata/switch-it-up" target="_blank">Codewars. Switch it Up!</a></p>
+
+            <h3 class="subtitle">6.10</h3>
+            <p class="info-text"><a href="https://www.codewars.com/kata/thinkful-logic-drills-traffic-light" target="_blank">Codewars. Thinkful - Logic Drills: Traffic light</a></p>
+
+            <h3 class="subtitle">6.11</h3>
+            <p class="info-text"><a href="https://www.codewars.com/kata/third-angle-of-a-triangle" target="_blank">Codewars. Third Angle of a Triangle</a></p>
+
+            <h3 class="subtitle">6.12</h3>
+            <p class="info-text"><a href="https://www.codewars.com/kata/transportation-on-vacation" target="_blank">Codewars. Transportation on vacation</a></p>
+            
+            <h3 class="subtitle">6.13</h3>
+            <p class="info-text"><a href="https://www.codewars.com/kata/type-of-sum" target="_blank">Codewars. Type of sum</a></p>
+
+            <h3 class="subtitle">6.14</h3>
+            <p class="info-text"><a href="https://www.codewars.com/kata/will-you-make-it" target="_blank">Codewars. Will you make it?</a></p>
+
+
+            <h3 class="subtitle">6.15</h3>
+            <p class="info-text"><a href="https://www.codewars.com/kata/53369039d7ab3ac506000467/train/javascript" target="_blank">Codewars. Convert boolean values to strings 'Yes' or 'No'.</a></p>
+
         </div>
         <p class="info-text"><a href="https://onlinetestpad.com/ks4n4ln47ddbm" target="_blank" style="color: #575252; font-size: 40px; font-weight: bold;">Test</a>
         </p>
