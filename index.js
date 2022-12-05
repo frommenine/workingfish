@@ -28,6 +28,10 @@ function js6_fun() {
     document.getElementById("js6").classList.toggle("show");
 }
 
+function js7_fun() {
+    document.getElementById("js7").classList.toggle("show");
+}
+
 
 // FIXED MENU
 
